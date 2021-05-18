@@ -128,7 +128,7 @@ section {
 }
 
 .item-1 {
-  background-image: url(../soon.jpg);
+  background-image: url(soon.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -156,6 +156,7 @@ section {
 
 .item-3 h2 {
   font-size: 2rem;
+  text-align: center;
 }
 
 .item-3 p {
@@ -175,6 +176,11 @@ section {
 
 .email-box {
   margin-left: 1rem;
+}
+
+#my-form-status {
+  font-size: 1rem;
+
 }
 
 #mail {

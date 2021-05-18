@@ -26,7 +26,7 @@
       <div class="grid-item item-1"></div>
 
       <div class="grid-item item-2">
-        <img src="../logo.png" alt="caesd">
+        <img src="logo.png" alt="caesd">
       </div>
 
       <div class="grid-item item-3">
@@ -36,25 +36,47 @@
       </div>
 
       <div class="grid-item item-4">
-        Want to stay updated?
+        <p id="my-form-status">Want to stay updated?</p>
         <div class="email-box">
-          <input id="mail" type="email" placeholder="Your email">
-          <button id="join" type="submit">Join</button>
+          <form  id="my-form"action="https://formspree.io/f/mknkjpwo" method="post">
+            <input id="mail" name="email" type="email" placeholder="Your email">
+            <button id="join" type="submit">Join</button>
+          </form>
         </div>
       </div>
 
       <div class="grid-item item-5">
-        <a href="#" target="_blank"><img src="../fb.svg" alt="facebook"></a>
-        <a href="https://twitter.com/caesdshop" target="_blank"><img src="../twitter.svg" alt="twitter"></a>
-        <a href="https://www.instagram.com/caesd.shop/" target="_blank"><img src="../ig.svg" alt="instagram"></a>
+        <a href="#" target="_blank"><img src="fb.svg" alt="facebook"></a>
+        <a href="https://twitter.com/caesdshop" target="_blank"><img src="twitter.svg" alt="twitter"></a>
+        <a href="https://www.instagram.com/caesd.shop/" target="_blank"><img src="ig.svg" alt="instagram"></a>
       </div>
+
 
     </div>
   </section>
 
+  <script>
+      var form = document.getElementById("my-form");
 
-
-
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+              'Accept': 'application/json'
+          }
+        }).then(response => {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        }).catch(error => {
+          status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+      }
+      form.addEventListener("submit", handleSubmit)
+  </script>
 </body>
 
 </html>
