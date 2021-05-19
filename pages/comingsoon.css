@@ -104,6 +104,7 @@ html {
 
 body {
   height: 100%;
+  animation: body-load 300ms ease-in;
 }
 
 section {
@@ -125,6 +126,7 @@ section {
   max-width: 100%;
   height: auto;
   grid-column: span 2;
+  animation: scale-in 300ms ease-in;
 }
 
 .item-1 {
@@ -132,6 +134,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  animation: slide-in-left 300ms ease-in;
 }
 
 .item-2 {
@@ -143,7 +146,8 @@ section {
 }
 
 .item-2 img {
-  height: 2em;
+  margin-top: 5em;
+  height: 5em;
 }
 
 .item-3 {
@@ -175,12 +179,19 @@ section {
 }
 
 .email-box {
-  margin-left: 1rem;
+  margin-top: 1em;
+}
+
+.email-box form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 #my-form-status {
   font-size: 1rem;
-
 }
 
 #mail {
@@ -192,7 +203,6 @@ section {
   padding-left: 0.5rem;
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
-  margin-top: 1rem;
 }
 
 #join {
@@ -206,7 +216,7 @@ section {
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  margin-top: 1rem;
+  margin-top: 1em;
 }
 
 #join:hover {
@@ -223,7 +233,7 @@ section {
   padding: 2em;
 }
 
-.item-5 img{
+.item-5 img {
   height: 4rem;
   margin-right: 1rem;
 }
@@ -232,11 +242,12 @@ section {
   .cs-grid {
     width: calc(100% - 0.5rem);
   }
+
   .grid-item {
     grid-column: span 1;
   }
 
-  .item-1{
+  .item-1 {
     grid-column: span 1;
     grid-row: span 5;
   }
@@ -255,11 +266,52 @@ section {
     width: 50%;
   }
 
-  #mail {
+  .email-box {
+    margin-top: 0;
+    margin-left: 1em;
+  }
+
+  .email-box form {
+    flex-direction: row;
+  }
+
+  z #mail {
     margin-top: 0;
   }
 
   #join {
     margin-top: 0;
+    margin-left: 0.5em;
+  }
+}
+
+/*Animations*/
+@keyframes body-load {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
