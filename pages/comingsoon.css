@@ -130,11 +130,13 @@ section {
 }
 
 .item-1 {
-  background-image: url(soon.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   animation: slide-in-left 300ms ease-in;
+}
+
+.item-1 img {
+  object-fit: cover;
+   width: 100%;
+   height: 100%;
 }
 
 .item-2 {
@@ -158,7 +160,7 @@ section {
   padding: 6rem 4em;
 }
 
-.item-3 h2 {
+.item-3 h1 {
   font-size: 2rem;
   text-align: center;
 }
