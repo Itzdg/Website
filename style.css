@@ -452,7 +452,6 @@ footer .footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #A3D9FF;
 }
 
 .our-story h2 {
@@ -474,26 +473,49 @@ footer .footer {
   background-size: cover;
   background-repeat: no-repeat;
   grid-column: span 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-images p {
+  color: #fff;
+  font-size: 24px;
 }
 
 .image-1 {
-  background-image: url(assets/a.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/a.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .image-2 {
-  background-image: url(assets/b.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/b.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .image-3 {
-  background-image: url(assets/c.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/c.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .image-4 {
-  background-image: url(assets/d.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/d.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .image-5 {
-  background-image: url(assets/e.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/e.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (min-width: 1000px) {
