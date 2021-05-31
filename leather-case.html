@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>caesdPlus Leather Case | CAESD</title>
+  <meta name="viewport" content="width=device-width, initial -scale=1.0">
+  <meta name="description" content="CAESD offers high-quality phone cases to users at all different price points. Our cases are designed to be minimalist and bright.">
+  <meta name="keywords" content="phone case, iPhone, cases, design, modern, minimalist, phone case">
+  <meta name="author" content="Devansh G.">
+  <meta name="copyright" content="CAESD">
+  <link rel="shortcut icon" href="assets/favicon.png">
+
+  <!-- Snip cart -->
+  <link rel="preconnect" href="https://app.snipcart.com">
+  <link rel="preconnect" href="https://cdn.snipcart.com">
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css" />
+
+  <!-- My Style Sheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <header>
+    <a href="index.html"><img class="header-brand" src="assets/logo.svg" alt="CAESD"></a>
+    <nav>
+      <ul>
+        <li><a href="cases.html">cases</a></li>
+        <li><a href="about-us.html">about us</a></li>
+        <li><a href="support.html">support</a></li>
+      </ul>
+    </nav>
+    <div class="shop-items">
+      <a class="snipcart-customer-signin"><img src="assets/person.svg" alt="shopping cart"></a>
+      <a class="snipcart-checkout"><img src="assets/cart.svg" alt="shopping cart"></a>
+    </div>
+  </header>
+
+  <section>
+    <div class="feature-grid">
+
+      <img class="feature-img" src="assets/leather-1.jpg" alt="caesdPlus Geniune Leather iPhone Case">
+      <div class="feature-item feature-desc">
+        <h2>CaesdPlus Geniune Leather Case</h2>
+        <h3>$69.00</h3>
+
+        <label>Colour
+          <select id="colour">
+            <option value="Black">Black</option>
+            <option value="Blue">Blue</option>
+            <option value="Red">Red</option>
+            <option value="Saddle">Saddle</option>
+            <option value="Pink">Pink</option>
+          </select>
+        </label>
+
+        <label>Phone
+          <select id="phone">
+            <option value="iPhone 12 Pro Max">iPhone 12 Pro Max</option>
+            <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+            <option value="iPhone 12">iPhone 12</option>
+            <option value="iPhone 11 Pro Max">iPhone 11 Pro Max</option>
+            <option value="iPhone 11 Pro">iPhone 11 Pro</option>
+            <option value="iPhone 11">iPhone 11</option>
+            <option value="iPhone Xs Max">iPhone Xs Max</option>
+            <option value="iPhone Xs">iPhone Xs</option>
+            <option value="iPhone X">iPhone X</option>
+          </select>
+        </label>
+
+
+        <label>Quantity
+          <input id="quantity" type="number" min="1" placeholder="1"></input>
+        </label>
+
+        <button id="prod" type="button" name="button" class="snipcart-add-item" data-item-id="Geniune Leather Case" data-item-price="69" data-item-url="/"
+          data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh." data-item-image="assets/leather-1.jpg" data-item-name="caesdPlus Geniune Leather Case"
+          data-item-custom1-name="Colour" data-item-custom1-options="Black| Blue| Red| Saddle| Pink" data-item-custom2-name="Phone"
+          data-item-custom2-options="iPhone 12 Pro Max | iPhone 12 Pro | iPhone 12 |iPhone 11 Pro Max | iPhone 11 Pro | iPhone 11 | iPhone Xs Max | iPhone Xs | iPhone X">
+          Add to Cart</button>
+
+        <script>
+          const button = document.querySelector('#prod')
+          const quantity = document.querySelector('#quantity')
+          quantity.addEventListener('change', () => {
+            button.setAttribute('data-item-quantity', quantity.value)
+          })
+
+          const colour = document.querySelector('#colour')
+          colour.addEventListener('change', () => {
+            button.setAttribute("data-item-custom1-value", colour.value)
+          })
+
+          const select = document.querySelector('#phone')
+          select.addEventListener('change', () => {
+            button.setAttribute("data-item-custom2-value", select.value)
+          })
+        </script>
+
+        <p>
+          We aim to make premium and quality cases accessible to everyone. You will no longer have to settle for mediocre cases because of your budget. Instead, use cases to express yourself and live life to the fullest.
+          Quality Geniune Leather. Soft and gentle to protect your iPhone, machined aluminum buttons, slim and sleek design, supports wireless
+          charging</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- SNIP CART -->
+  <script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
+  <div hidden id="snipcart" data-api-key="ZjgwZTkxZWEtZTM1Ni00NzY0LWFlOGMtMTYyMTA3MjdhZmViNjM3NTY2NDQ2MTk2Njg1ODc3"></div>
+
+  <footer>
+    <div class="footer">
+
+      <div class="footer-heading footer-1">
+        <h2>Contact Us</h2>
+        <a href="support.html#faq">FAQs</a>
+        <a href="support.html">Support</a>
+        <a href="support.html#collab">Collaboration</a>
+      </div>
+
+      <div class="footer-heading footer-2">
+        <h2>Collections</h2>
+        <a href="#">caesdOne</a>
+        <a href="#">caesdPlus</a>
+        <a href="#">caesdStyle</a>
+        <a href="#">caesdYours</a>
+      </div>
+
+      <div class="footer-heading footer-3">
+        <h2>Social Media</h2>
+        <a href="https://www.instagram.com/caesd.shop/" target="_blank">Instagram</a>
+        <a href="https://twitter.com/caesdshop" target="_blank">Twitter</a>
+      </div>
+
+      <div class="footer-email-form">
+        <h2>Join our newsletter</h2>
+        <input type="email" placeholder="Your email address" id="footer-email">
+        <input type="submit" value="Join" id="footer-email-btn">
+      </div>
+    </div>
+
+  </footer>
+</body>
+
+</html>
