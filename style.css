@@ -150,10 +150,13 @@ header ul li a:hover {
 .shop-items {
   justify-content: center;
   align-items: center;
+  padding: 8px;
 }
 
-.shop-items a img {
-  height: 24px;
+.shop-items img {
+  cursor: pointer;
+  margin-right: 24px;
+  width: 24px;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -175,10 +178,10 @@ header ul li a:hover {
     margin-left: auto;
     justify-content: flex-start;
     align-items: center;
+    padding: 0;
   }
-
-  .shop-items a img {
-    height: 32px;
+  .shop-items {
+    height: 24px;
     margin-right: 32px;
   }
 }
@@ -261,7 +264,7 @@ footer .footer {
   width: 100%;
   margin-top: 16px;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/soon.jpg);
-  background-position: center middle;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 60vh;
@@ -453,9 +456,21 @@ footer .footer {
 }
 
 .form p select {
-  margin-left: 16px;
-  width: 70%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   font-size: 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2U9IiNiYmIiPjxwYXRoIGQ9Ik02IDlsNiA2IDYtNiIvPjwvc3ZnPg==) !important;
+  background-repeat: no-repeat !important;
+  background-position-x: 100% !important;
+  background-position-y: 50% !important;
+  padding: 8px;
+  border: 0.5px solid #000;
+  border-radius: 0px;
+  color: #000;
 }
 
 .form textarea {
@@ -520,7 +535,7 @@ footer .footer {
 .gallery {
   padding-top: 32px;
   padding-bottom: 32px;
-  width: calc(100%-32px);
+  width: calc(100% - 32px);
   padding-left: 16px;
   padding-right: 16px;
   height: auto;
@@ -651,9 +666,10 @@ footer .footer {
   text-decoration: none;
   color: #000;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   outline: none;
-  border: solid 0.5px #000;
+  text-transform: capitalize;
+  border: solid 1px #000;
   font-size: 14px;
   padding: 10px;
 }

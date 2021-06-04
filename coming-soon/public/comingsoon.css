@@ -319,3 +319,29 @@ section {
     transform: scale(1);
   }
 }
+
+/*Dark Mode*/
+@media (prefers-color-scheme: dark) {
+
+body {
+  background-color: #111;
+}
+
+.item-2 img{
+  filter: invert();
+}
+
+.item-5 img{
+  filter: invert();
+}
+
+.item-1 img {
+  filter: brightness(0.8);
+}
+
+
+h1, p {
+  color: #fff;
+}
+
+}
