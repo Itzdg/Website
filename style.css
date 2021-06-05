@@ -22,6 +22,7 @@ time, mark, audio, video {
 
 body {
   line-height: 1;
+  background-color: #FBFBFF;
 }
 
 article, aside, details, figcaption, figure,
@@ -54,14 +55,14 @@ a {
 /* change colours to suit your needs */
 ins {
   background-color: #ff9;
-  color: #000;
+  color: ;
   text-decoration: none;
 }
 
 /* change colours to suit your needs */
 mark {
   background-color: #ff9;
-  color: #000;
+  color: #0B0500;
   font-style: italic;
   font-weight: bold;
 }
@@ -98,8 +99,6 @@ input, select {
   font-family: 'Roboto', sans-serif;
 }
 
-body {}
-
 section {
   width: calc(100% - 32px);
   display: flex;
@@ -109,7 +108,7 @@ section {
 
 /*HEADER*/
 header {
-  background-color: #fff;
+  background-color: #FBFBFF;
   width: 100%;
   height: auto;
   display: flex;
@@ -139,7 +138,7 @@ header ul li a {
   text-transform: capitalize;
   font-size: 16px;
   text-decoration: none;
-  color: #000;
+  color: #0B0500;
 }
 
 header ul li a:hover {
@@ -161,6 +160,8 @@ header ul li a:hover {
 
 @media only screen and (min-width: 1000px) {
   header {
+    padding-top: 8px;
+    padding-bottom: 8px;
     flex-direction: row;
     align-items: center;
   }
@@ -180,6 +181,7 @@ header ul li a:hover {
     align-items: center;
     padding: 0;
   }
+
   .shop-items {
     height: 24px;
     margin-right: 32px;
@@ -189,14 +191,14 @@ header ul li a:hover {
 /*FOOTER*/
 footer {
   border-top: 0.5px solid #b3b3b3;
-  background-color: #fff;
+  background-color: #FBFBFF;
   padding: 32px 0 64px 0;
 }
 
 footer .footer {
   width: 80%;
-  height: 40vh;
-  background-color: #fff;
+  height: auto;
+  background-color: #FBFBFF;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -215,7 +217,7 @@ footer .footer {
 
 .footer-heading a {
   font-family: 'Montserrat', sans-serif;
-  color: #000;
+  color: #0B0500;
   text-decoration: none;
   margin-bottom: 16px;
 }
@@ -230,32 +232,33 @@ footer .footer {
 }
 
 #footer-email {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   width: 250px;
   height: 40px;
   outline: none;
-  border: solid 0.5px #000;
+  border: solid 0.5px #0B0500;
   padding-left: 8px;
   font-size: 16px;
-  margin-bottom: 16px;
+  background-color: transparent;
 }
 
 #footer-email-btn {
   width: 103px;
   padding: 1px;
   height: 42px;
-  background-color: #ff726f;
+  background-color: #e4646d;
   outline: none;
-  border: solid 0.5px #000;
-  color: #343F4B;
+  border: solid 0.5px #0B0500;
+  color: #0B0500;
   font-size: 16px;
-  margin-bottom: 16px;
-  font-weight: 600;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 #footer-email-btn:hover {
   cursor: pointer;
-  background-color: #f9423d;
+  background-color: #DA2C38;
   transition: all 0.4s ease-out;
 }
 
@@ -263,7 +266,7 @@ footer .footer {
 .index-banner {
   width: 100%;
   margin-top: 16px;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/soon.jpg);
+  background: url(assets/soon.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -278,13 +281,13 @@ footer .footer {
 
 .index-banner h1 {
   font-size: 32px;
-  color: #fff;
+  color: #FBFBFF;
   text-align: center;
   margin-bottom: 16px;
 }
 
 .index-banner p {
-  color: #fff;
+  color: #FBFBFF;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   text-align: center;
@@ -299,7 +302,7 @@ footer .footer {
 
 .vision-image {
   margin: 32px;
-  background-image: url(assets/d.jpg);
+  background-image: url(assets/vision.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -355,21 +358,6 @@ footer .footer {
   line-height: 20px;
 }
 
-.coll-item button {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  outline: none;
-  border: solid 1px #000;
-  background-color: #fff;
-  font-size: 12px;
-  text-transform: uppercase;
-  padding: 10px;
-}
-
-.coll-item button:hover {
-  opacity: 0.6;
-}
-
 @media only screen and (min-width: 1000px) {
   .index-banner h1 {
     margin-left: 32px;
@@ -419,8 +407,8 @@ footer .footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/support.jpg);
+  color: #FBFBFF;
+  background: url(assets/support.jpg);
   background-size: cover;
 }
 
@@ -442,8 +430,10 @@ footer .footer {
 .form input {
   width: 80%;
   font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   padding: 8px;
-  border: solid 0.5px #000;
+  border: solid 0.5px #0B0500;
   outline: none;
   margin-bottom: 16px;
 }
@@ -460,22 +450,24 @@ footer .footer {
   -moz-appearance: none;
   font-size: 16px;
   width: 100%;
-  border: none;
   outline: none;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2U9IiNiYmIiPjxwYXRoIGQ9Ik02IDlsNiA2IDYtNiIvPjwvc3ZnPg==) !important;
   background-repeat: no-repeat !important;
   background-position-x: 100% !important;
   background-position-y: 50% !important;
   padding: 8px;
-  border: 0.5px solid #000;
+  border: 0.5px solid #0B0500;
   border-radius: 0px;
-  color: #000;
+  color: #0B0500;
 }
 
 .form textarea {
   resize: none;
   font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   padding: 8px;
   width: 80%;
   height: 320px;
@@ -487,8 +479,8 @@ footer .footer {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   outline: none;
-  border: solid 1px #000;
-  background-color: #fff;
+  border: 1px solid #0B0500;
+  background-color: #FBFBFF;
   font-size: 12px;
   text-transform: uppercase;
   padding: 10px;
@@ -575,28 +567,28 @@ footer .footer {
 }
 
 .about-images p {
-  color: #fff;
+  color: #FBFBFF;
   font-size: 24px;
 }
 
 .image-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/a.jpg);
+  background: url(assets/a.jpg);
 }
 
 .image-2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/b.jpg);
+  background: url(assets/b.jpg);
 }
 
 .image-3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/c.jpg);
+  background: url(assets/c.jpg);
 }
 
 .image-4 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/d.jpg);
+  background: url(assets/d.jpg);
 }
 
 .image-5 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/e.jpg);
+  background: url(assets/e.jpg);
 }
 
 .background-image-div {
@@ -664,19 +656,19 @@ footer .footer {
 
 .product-item a {
   text-decoration: none;
-  color: #000;
+  color: #0B0500;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   outline: none;
   text-transform: capitalize;
-  border: solid 1px #000;
+  border: solid 1px #0B0500;
   font-size: 14px;
   padding: 10px;
 }
 
 .product-item a:hover {
   cursor: pointer;
-  background-color: #ff726f;
+  background-color: #e4646d;
   transition: all 0.4s ease-out;
 }
 
@@ -685,7 +677,7 @@ footer .footer {
     grid-column: span 1;
   }
 
-  .product-item button {
+  .product-item a {
     padding: 10px 32px 10px 32px;
   }
 }
@@ -701,7 +693,6 @@ footer .footer {
   width: 100%;
   grid-column: span 2;
 }
-
 
 .feature-desc {
   line-height: 21px;
@@ -725,7 +716,7 @@ footer .footer {
   padding: 8px;
   border: 0.5px solid #b3b3b3;
   border-radius: 0px;
-  color: #000;
+  color: #0B0500;
 }
 
 .feature-item input {
@@ -736,7 +727,7 @@ footer .footer {
   font-family: 'Montserrat', sans-serif;
   padding: 8px;
   border: 0.5px solid #b3b3b3;
-  color: #000;
+  color: #0B0500;
   width: 32px;
 }
 
@@ -768,7 +759,7 @@ footer .footer {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   outline: none;
-  border: 0.5px solid #000;
+  border: 0.5px solid #0B0500;
   background-color: transparent;
   font-size: 14px;
   text-transform: uppercase;
@@ -779,7 +770,7 @@ footer .footer {
 
 .feature-item button:hover {
   cursor: pointer;
-  background-color: #ff726f;
+  background-color: #e4646d;
   transition: all 0.4s ease-out;
 }
 
@@ -806,4 +797,15 @@ footer .footer {
   .feature-item input {
     min-width: 40px;
   }
+}
+
+/*SNIPCART*/
+#snipcart {
+   --bgColor-modal: rgb(255,255,255);
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
+}
+
+.snipcart-signin__box {
+  border: 0.5px solid #b3b3b3;
 }
