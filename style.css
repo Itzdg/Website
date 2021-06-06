@@ -118,11 +118,12 @@ header {
 }
 
 header .header-brand {
-  height: 32px;
+  height: 24px;
   display: block;
   margin-top: 16px;
   margin-bottom: 16px;
 }
+
 
 header nav ul {
   display: flex;
@@ -231,32 +232,45 @@ footer .footer {
   margin-bottom: 32px;
 }
 
-#footer-email {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+#my-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#mail {
   width: 250px;
   height: 40px;
   outline: none;
-  border: solid 0.5px #0B0500;
+  border: solid 0.5px #000;
   padding-left: 8px;
-  font-size: 16px;
-  background-color: transparent;
-}
-
-#footer-email-btn {
-  width: 103px;
-  padding: 1px;
-  height: 42px;
-  background-color: #e4646d;
-  outline: none;
-  border: solid 0.5px #0B0500;
-  color: #0B0500;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  border-radius: 6px;
+  background-color:#FBFBFF;;
+  margin: 0;
 }
 
-#footer-email-btn:hover {
+#join {
+  margin: 0;
+  outline: none;
+  padding: 1px 32px;
+  height: 43px;
+  background-color: #e4646d;
+  border-radius: 6px;
+  border: solid 0.5px #000;
+  border-left: none;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #FBFBFF;
+  margin-top: 8px;
+}
+
+#join:hover {
   cursor: pointer;
   background-color: #DA2C38;
   transition: all 0.4s ease-out;
@@ -324,9 +338,14 @@ footer .footer {
   margin-bottom: 32px;
 }
 
+.vision-item p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
 .collections-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 32px;
 }
 
@@ -342,7 +361,9 @@ footer .footer {
 .coll-item img {
   margin-left: 0;
   margin-right: 0;
-  width: 300px;
+  width: 100%;
+  object-fit: contain;
+  height: auto;
 }
 
 .coll-item img, h2, p {
@@ -355,7 +376,9 @@ footer .footer {
 
 .coll-item p {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   line-height: 20px;
+  width: 80%;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -377,6 +400,19 @@ footer .footer {
 
   .vision-item {
     grid-column: span 1;
+  }
+
+  .coll-item img {
+    width: 80%;
+  }
+
+  #mail {
+    border-radius: 6px 0 0 6px;
+  }
+
+  #join {
+    margin-top: 0;
+    border-radius: 0 6px 6px 0;
   }
 }
 

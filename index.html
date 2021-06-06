@@ -27,7 +27,12 @@
 
 <body>
   <header>
-    <a href="index.html"><img class="header-brand" src="assets/logo.svg" alt="CAESD"></a>
+    <a href="index.html">
+      <picture >
+        <source media="(min-width: 1000px)" srcset="assets/logo.svg">
+        <img class="header-brand" src="assets/logo-s.svg" alt="CAESD">
+      </picture>
+    </a>
     <nav>
       <ul>
         <li><a href="cases.html">cases</a></li>
@@ -85,11 +90,6 @@
 
   <section>
     <div class="collections-grid">
-      <div id="caesdPlus" class="coll-item">
-        <img src="assets/plus.jpg" alt="caesdPlus phone case" loading="lazy">
-        <h2>caesdPlus</h2>
-        <p>Our most premium cases made with the finest materials such as leather, carbon fibre and wood veneer; these cases not only protect your phone but also enhance its visuals.</p>
-      </div>
       <div id="caesdOne" class="coll-item">
         <img src="assets/one.jpg" alt="caesdOne phone case" loading="lazy">
         <h2>caesdOne</h2>
@@ -120,7 +120,6 @@
       <div class="footer-heading footer-2">
         <h2>Collections</h2>
         <a href="#caesdOne">caesdOne</a>
-        <a href="#caesdPlus">caesdPlus</a>
         <a href="#caesdStyle">caesdStyle</a>
       </div>
 
@@ -133,8 +132,10 @@
 
       <div class="footer-email-form">
         <h2>Join our newsletter</h2>
-        <input type="email" placeholder="Your email address" id="footer-email">
-        <input type="submit" value="Join" id="footer-email-btn">
+        <form id="my-form" action="https://formspree.io/f/mknkjpwo" method="post">
+          <input id="mail" name="email" type="email" placeholder="Your email">
+          <button id="join" type="submit">Join</button>
+        </form>
       </div>
     </div>
 
